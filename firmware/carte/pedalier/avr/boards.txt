@@ -1,0 +1,40 @@
+# Carte "Pedalier DIY" : une Arduino Pro Micro 5 V / 16 MHz (ATmega32u4)
+# compilée comme une Leonardo, mais avec son propre nom USB et son propre PID.
+# Windows mémorise le nom d'un périphérique par couple VID/PID : un PID
+# différent de celui de la Leonardo (0x8036) lui fait afficher "Pedalier DIY".
+# Le cœur, la variante et l'outil de téléversement sont ceux d'Arduino AVR.
+
+pedalier.name=Pedalier DIY (Pro Micro 5V)
+
+pedalier.vid.0=0x2341
+pedalier.pid.0=0x80F0
+pedalier.upload_port.0.vid=0x2341
+pedalier.upload_port.0.pid=0x80F0
+pedalier.upload_port.1.vid=0x2341
+pedalier.upload_port.1.pid=0x0036
+pedalier.upload_port.2.vid=0x1B4F
+pedalier.upload_port.2.pid=0x9205
+pedalier.upload_port.3.vid=0x1B4F
+pedalier.upload_port.3.pid=0x9206
+pedalier.upload_port.4.board=pedalier
+
+pedalier.upload.tool=arduino:avrdude
+pedalier.upload.tool.default=arduino:avrdude
+pedalier.upload.protocol=avr109
+pedalier.upload.maximum_size=28672
+pedalier.upload.maximum_data_size=2560
+pedalier.upload.speed=57600
+pedalier.upload.disable_flushing=true
+pedalier.upload.use_1200bps_touch=true
+pedalier.upload.wait_for_upload_port=true
+
+pedalier.build.mcu=atmega32u4
+pedalier.build.f_cpu=16000000L
+pedalier.build.vid=0x2341
+pedalier.build.pid=0x80F0
+pedalier.build.usb_product="Pedalier DIY"
+pedalier.build.usb_manufacturer="DIY"
+pedalier.build.board=AVR_LEONARDO
+pedalier.build.core=arduino:arduino
+pedalier.build.variant=arduino:leonardo
+pedalier.build.extra_flags={build.usb_flags}

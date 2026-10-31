@@ -1,0 +1,4 @@
+# Plateforme minimale : tout (recettes de compilation, outils) vient
+# d'Arduino AVR, référencé dans boards.txt par "arduino:".
+name=Pedalier DIY
+version=1.0.0

@@ -1,0 +1,10 @@
+bin/
+obj/
+dist/
+firmware/build/
+.vs/
+*.user
+*.suo
+
+# Réglages locaux (Claude)
+.claude/settings.local.json
