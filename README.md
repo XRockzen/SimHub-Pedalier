@@ -28,11 +28,12 @@ Propriétés SimHub (dashboards, overlays) : `PedalierPlugin.Accelerateur`, `Ped
 
 ## Matériel
 
-| Élément | Référence | Bus |
-|---|---|---|
-| Microcontrôleur | Arduino Pro Micro 5 V / 16 MHz (ATmega32u4) | USB |
-| Accélérateur | AS5600 | I2C 0x36 |
-| Frein | Load cell 4 fils + NAU7802 | I2C 0x2A |
+| Élément | Référence | Bus | Achat |
+|---|---|---|---|
+| Microcontrôleur | Pro Micro 5 V / 16 MHz (ATmega32u4), USB-C | USB | [Amazon](https://www.amazon.fr/dp/B0D69JLJ97) |
+| Accélérateur | Module AS5600 12 bits + aimant (lot de 4) | I2C 0x36 | [Amazon](https://www.amazon.fr/dp/B0D4YW7NVB) |
+| ADC du frein | Module NAU7802 24 bits, Stemma QT / Qwiic (format Adafruit 4538 : VIN 3-5 V, régulateur intégré) | I2C 0x2A | [Amazon](https://www.amazon.fr/dp/B0FYLL3CC3) |
+| Capteur du frein | Load cell Mavin NA151, alliage d'aluminium, 100 kg, 4 fils | via NAU7802 | [AliExpress](https://fr.aliexpress.com/item/1005004043359730.html) |
 
 ![Câblage](docs/cablage.png)
 
